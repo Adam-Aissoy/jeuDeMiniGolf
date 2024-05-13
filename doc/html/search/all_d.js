@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['sand_76',['Sand',['../classSand.html',1,'Sand'],['../classSand.html#a9183f611f6e8160fd15f1f048c81720e',1,'Sand::Sand()'],['../classSand.html#aecdc5d9cd12442772741fb614fce33f4',1,'Sand::Sand(float X, float Y)']]],
+  ['sand_2ecpp_77',['Sand.cpp',['../Sand_8cpp.html',1,'']]],
+  ['sand_2eh_78',['Sand.h',['../Sand_8h.html',1,'']]],
+  ['sands_79',['Sands',['../classGame.html#aede598ca99aac8dfeca2c69856904e37',1,'Game']]],
+  ['sandscollision_80',['sandscollision',['../classBall.html#acd7ade46291d755e9822feb1227c5201',1,'Ball']]],
+  ['screenx_81',['ScreenX',['../classMGolf.html#a6e01f7f7d5f02cc56e70225138fb909e',1,'MGolf']]],
+  ['screeny_82',['ScreenY',['../classMGolf.html#aa4f03b832b5b1e53618525ca2059b087',1,'MGolf']]],
+  ['setdirx_83',['setDirX',['../classBall.html#a5d33a2cdc069b12bbff54060b1c26e7f',1,'Ball']]],
+  ['setdiry_84',['setDirY',['../classBall.html#aeb9f8262c991bb100effd4739993e932',1,'Ball']]],
+  ['setpositionx_85',['setPositionX',['../classBall.html#a3a042bcf5ede9df75429ce18bb12b2b8',1,'Ball']]],
+  ['setpositiony_86',['setPositionY',['../classBall.html#abe457fed70fbbd171b97c87b2692bd58',1,'Ball']]],
+  ['setscale_87',['setScale',['../classBall.html#ae4580b4addab0e5e2113a473888f07c9',1,'Ball']]],
+  ['setvelocityx_88',['setVelocityX',['../classBall.html#a14bc6cd283d9abb295b91a5df0c73cc5',1,'Ball']]],
+  ['setvelocityy_89',['setVelocityY',['../classBall.html#a763a0f16171065d94c56f352ed483053',1,'Ball']]],
+  ['setwin_90',['setWin',['../classBall.html#addf518c567ae946dcb430edcbbf27bb5',1,'Ball']]],
+  ['setx_91',['setX',['../classVec2f.html#afe64aaf0e9899d93d295fa7681ab9cbc',1,'Vec2f']]],
+  ['sety_92',['setY',['../classVec2f.html#a10777924fd71acd8007990451dbe719e',1,'Vec2f']]],
+  ['sizeterrain_93',['sizeTerrain',['../classtxtGame.html#a2fca11987a4ca3aba2970e740fc83ce6',1,'txtGame']]],
+  ['state_94',['state',['../classMGolf.html#a89575ac3c23ba9fdaa0bdd403587e2c8',1,'MGolf::state()'],['../classtxtGame.html#a12efb22ead255927c7a6638ee519108c',1,'txtGame::state()']]],
+  ['strength_95',['strength',['../classMGolf.html#a7b1f81bb3898f52e239ba833fffcb607',1,'MGolf']]],
+  ['swing_96',['swing',['../classBall.html#adc4bb5735296bdc9db9faa162ea23cdc',1,'Ball']]],
+  ['swing_5fsdl_97',['swing_sdl',['../classMGolf.html#acae30ba2e0d88a5c50426954942f86b7',1,'MGolf']]]
+];

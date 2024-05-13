@@ -1,0 +1,223 @@
+\hypertarget{classGame}{}\doxysection{Game Class Reference}
+\label{classGame}\index{Game@{Game}}
+
+
+Une \textquotesingle{}\mbox{\hyperlink{classGame}{Game}}\textquotesingle{} comporte donc \+:  
+
+
+
+
+{\ttfamily \#include $<$Game.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGame_ad59df6562a58a614fda24622d3715b65}{Game}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{Construit}} un objet \mbox{\hyperlink{classGame}{Game}}. Le constructeur remplit uniquement level avec 0. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classGame_a77b4d1b1c055b2aa0cc06be4e5d7346b}{get\+W\+SizeX}} () const
+\begin{DoxyCompactList}\small\item\em Renvoie la composante X du \mbox{\hyperlink{classVec2f}{Vec2f}} wallsize. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classGame_a27c443bfe9f423cc252375849ff2968a}{get\+W\+SizeY}} () const
+\begin{DoxyCompactList}\small\item\em Renvoie la composante Y du \mbox{\hyperlink{classVec2f}{Vec2f}} wallsize. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_ad59a47e6c991504f9f0d721135bf4573}{load\+\_\+level}} (const string \&filename, int Bsize, int DX, int DY)
+\begin{DoxyCompactList}\small\item\em Remplit toutes les données de \mbox{\hyperlink{classGame}{Game}} en ouvrant un fichier extérieur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_a07535a06e0962dfdfcade57d767aae2d}{update}} (double delta\+Time)
+\begin{DoxyCompactList}\small\item\em Update la \mbox{\hyperlink{classGame}{Game}} donc la Balle en rentrant toutes les composantes de la \mbox{\hyperlink{classGame}{Game}} dans B.\+update (cf \mbox{\hyperlink{Ball_8h}{Ball.\+h}}) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_ab1010ee982c6b05a0cc796a7bb145154}{update\+\_\+lvl}} (int Bsize, int DX, int DY)
+\begin{DoxyCompactList}\small\item\em Update le level (c\textquotesingle{}est ici que l\textquotesingle{}on définit les chemins des niveaux) les paramètres sont nécessaires à la fonction load\+\_\+level on les entre donc ici. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classGame_aafbf5b65d551f8d416efd405494f96f2}{DimX}}
+\item 
+int \mbox{\hyperlink{classGame_ad28cbb37c6db43a55ab26376205d7871}{DimY}}
+\item 
+int \mbox{\hyperlink{classGame_abe14118bc7cb70c342636c2b2a15554b}{level}}
+\item 
+\mbox{\hyperlink{classBall}{Ball}} \mbox{\hyperlink{classGame_a482ca8a44325afdf4a7c4b9bf3e0b662}{B}}
+\item 
+\mbox{\hyperlink{classVec2f}{Vec2f}} \mbox{\hyperlink{classGame_a552ef484e8aca173b651cc0a0b5e3055}{Hole}}
+\item 
+vector$<$ \mbox{\hyperlink{classWall}{Wall}} $>$ \mbox{\hyperlink{classGame_a0a056ef4a93d5e8c1754ccb71577fb9b}{Walls}}
+\item 
+vector$<$ \mbox{\hyperlink{classSand}{Sand}} $>$ \mbox{\hyperlink{classGame_aede598ca99aac8dfeca2c69856904e37}{Sands}}
+\item 
+vector$<$ vector$<$ char $>$ $>$ \mbox{\hyperlink{classGame_adc517932614d68eef73051c33de6d1a6}{Terrain}}
+\item 
+int \mbox{\hyperlink{classGame_adb66696069147dac14613230af2ef336}{ballsize}}
+\item 
+\mbox{\hyperlink{classVec2f}{Vec2f}} \mbox{\hyperlink{classGame_a42e10210583cb53396efed5cb64efa75}{wallsize}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Une \textquotesingle{}\mbox{\hyperlink{classGame}{Game}}\textquotesingle{} comporte donc \+: 
+
+
+\begin{DoxyItemize}
+\item Un terrain (tableau 2D de caractère)
+\item Un tableau de murs (tableau 1D de \mbox{\hyperlink{classWall}{Wall}} (cf \mbox{\hyperlink{Wall_8h}{Wall.\+h}}))
+\item Un tableau de sables (tableau 1D de \mbox{\hyperlink{classSand}{Sand}} (cf \mbox{\hyperlink{Sand_8h}{Sand.\+h}}))
+\item Un troue (Hole -\/$>$ \mbox{\hyperlink{classVec2f}{Vec2f}})
+\item Un entier level qui réprésente le numéro du niveau
+\item Un \mbox{\hyperlink{classVec2f}{Vec2f}} de wallsize utile différent pour S\+DL et T\+XT
+\item Un entier ballsize représentant la taille de la balle 
+\end{DoxyItemize}
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGame_ad59df6562a58a614fda24622d3715b65}\label{classGame_ad59df6562a58a614fda24622d3715b65}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{Construit}} un objet \mbox{\hyperlink{classGame}{Game}}. Le constructeur remplit uniquement level avec 0. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGame_a77b4d1b1c055b2aa0cc06be4e5d7346b}\label{classGame_a77b4d1b1c055b2aa0cc06be4e5d7346b}} 
+\index{Game@{Game}!getWSizeX@{getWSizeX}}
+\index{getWSizeX@{getWSizeX}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getWSizeX()}{getWSizeX()}}
+{\footnotesize\ttfamily float Game\+::get\+W\+SizeX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Renvoie la composante X du \mbox{\hyperlink{classVec2f}{Vec2f}} wallsize. 
+
+\mbox{\Hypertarget{classGame_a27c443bfe9f423cc252375849ff2968a}\label{classGame_a27c443bfe9f423cc252375849ff2968a}} 
+\index{Game@{Game}!getWSizeY@{getWSizeY}}
+\index{getWSizeY@{getWSizeY}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getWSizeY()}{getWSizeY()}}
+{\footnotesize\ttfamily float Game\+::get\+W\+SizeY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Renvoie la composante Y du \mbox{\hyperlink{classVec2f}{Vec2f}} wallsize. 
+
+\mbox{\Hypertarget{classGame_ad59a47e6c991504f9f0d721135bf4573}\label{classGame_ad59a47e6c991504f9f0d721135bf4573}} 
+\index{Game@{Game}!load\_level@{load\_level}}
+\index{load\_level@{load\_level}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{load\_level()}{load\_level()}}
+{\footnotesize\ttfamily void Game\+::load\+\_\+level (\begin{DoxyParamCaption}\item[{const string \&}]{filename,  }\item[{int}]{Bsize,  }\item[{int}]{DX,  }\item[{int}]{DY }\end{DoxyParamCaption})}
+
+
+
+Remplit toutes les données de \mbox{\hyperlink{classGame}{Game}} en ouvrant un fichier extérieur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & \+: un const string représentant le chemin du fichier ou se trouve le niveau que l\textquotesingle{}on souhaite ouvrir \\
+\hline
+{\em Bsize} & \+: un entier représentant la taille de la balle (1 pour T\+XT et la taille du sprite en S\+DL) \\
+\hline
+{\em DX} & \+: la taille en X de l\textquotesingle{}affichage sur lequel on souhaite représenter ce niveau \\
+\hline
+{\em DY} & \+: la taille en Y de l\textquotesingle{}affichage sur lequel on souhaite représenter ce niveau \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_a07535a06e0962dfdfcade57d767aae2d}\label{classGame_a07535a06e0962dfdfcade57d767aae2d}} 
+\index{Game@{Game}!update@{update}}
+\index{update@{update}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Game\+::update (\begin{DoxyParamCaption}\item[{double}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+Update la \mbox{\hyperlink{classGame}{Game}} donc la Balle en rentrant toutes les composantes de la \mbox{\hyperlink{classGame}{Game}} dans B.\+update (cf \mbox{\hyperlink{Ball_8h}{Ball.\+h}}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & \+: Temps entre 2 frames (inutile pour txt donc mis à 1 en paramètre) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_ab1010ee982c6b05a0cc796a7bb145154}\label{classGame_ab1010ee982c6b05a0cc796a7bb145154}} 
+\index{Game@{Game}!update\_lvl@{update\_lvl}}
+\index{update\_lvl@{update\_lvl}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{update\_lvl()}{update\_lvl()}}
+{\footnotesize\ttfamily void Game\+::update\+\_\+lvl (\begin{DoxyParamCaption}\item[{int}]{Bsize,  }\item[{int}]{DX,  }\item[{int}]{DY }\end{DoxyParamCaption})}
+
+
+
+Update le level (c\textquotesingle{}est ici que l\textquotesingle{}on définit les chemins des niveaux) les paramètres sont nécessaires à la fonction load\+\_\+level on les entre donc ici. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Bsize} & \+: Taille de la balle \\
+\hline
+{\em DX} & \+: la taille en X de l\textquotesingle{}affichage sur lequel on souhaite représenter ce niveau \\
+\hline
+{\em DY} & \+: la taille en Y de l\textquotesingle{}affichage sur lequel on souhaite représenter ce niveau \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classGame_a482ca8a44325afdf4a7c4b9bf3e0b662}\label{classGame_a482ca8a44325afdf4a7c4b9bf3e0b662}} 
+\index{Game@{Game}!B@{B}}
+\index{B@{B}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{B}{B}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBall}{Ball}} Game\+::B}
+
+\mbox{\Hypertarget{classGame_adb66696069147dac14613230af2ef336}\label{classGame_adb66696069147dac14613230af2ef336}} 
+\index{Game@{Game}!ballsize@{ballsize}}
+\index{ballsize@{ballsize}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{ballsize}{ballsize}}
+{\footnotesize\ttfamily int Game\+::ballsize}
+
+\mbox{\Hypertarget{classGame_aafbf5b65d551f8d416efd405494f96f2}\label{classGame_aafbf5b65d551f8d416efd405494f96f2}} 
+\index{Game@{Game}!DimX@{DimX}}
+\index{DimX@{DimX}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{DimX}{DimX}}
+{\footnotesize\ttfamily int Game\+::\+DimX}
+
+\mbox{\Hypertarget{classGame_ad28cbb37c6db43a55ab26376205d7871}\label{classGame_ad28cbb37c6db43a55ab26376205d7871}} 
+\index{Game@{Game}!DimY@{DimY}}
+\index{DimY@{DimY}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{DimY}{DimY}}
+{\footnotesize\ttfamily int Game\+::\+DimY}
+
+\mbox{\Hypertarget{classGame_a552ef484e8aca173b651cc0a0b5e3055}\label{classGame_a552ef484e8aca173b651cc0a0b5e3055}} 
+\index{Game@{Game}!Hole@{Hole}}
+\index{Hole@{Hole}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Hole}{Hole}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVec2f}{Vec2f}} Game\+::\+Hole}
+
+\mbox{\Hypertarget{classGame_abe14118bc7cb70c342636c2b2a15554b}\label{classGame_abe14118bc7cb70c342636c2b2a15554b}} 
+\index{Game@{Game}!level@{level}}
+\index{level@{level}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily int Game\+::level}
+
+\mbox{\Hypertarget{classGame_aede598ca99aac8dfeca2c69856904e37}\label{classGame_aede598ca99aac8dfeca2c69856904e37}} 
+\index{Game@{Game}!Sands@{Sands}}
+\index{Sands@{Sands}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Sands}{Sands}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classSand}{Sand}}$>$ Game\+::\+Sands}
+
+\mbox{\Hypertarget{classGame_adc517932614d68eef73051c33de6d1a6}\label{classGame_adc517932614d68eef73051c33de6d1a6}} 
+\index{Game@{Game}!Terrain@{Terrain}}
+\index{Terrain@{Terrain}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Terrain}{Terrain}}
+{\footnotesize\ttfamily vector$<$vector$<$char$>$ $>$ Game\+::\+Terrain}
+
+\mbox{\Hypertarget{classGame_a0a056ef4a93d5e8c1754ccb71577fb9b}\label{classGame_a0a056ef4a93d5e8c1754ccb71577fb9b}} 
+\index{Game@{Game}!Walls@{Walls}}
+\index{Walls@{Walls}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Walls}{Walls}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classWall}{Wall}}$>$ Game\+::\+Walls}
+
+\mbox{\Hypertarget{classGame_a42e10210583cb53396efed5cb64efa75}\label{classGame_a42e10210583cb53396efed5cb64efa75}} 
+\index{Game@{Game}!wallsize@{wallsize}}
+\index{wallsize@{wallsize}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{wallsize}{wallsize}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVec2f}{Vec2f}} Game\+::wallsize}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/d/\+Lucas/\+Bureau/\+L\+I\+F\+A\+P4/\+Git remote/master-\/golf/master\+\_\+golf/src/core/\mbox{\hyperlink{Game_8h}{Game.\+h}}\item 
+/mnt/d/\+Lucas/\+Bureau/\+L\+I\+F\+A\+P4/\+Git remote/master-\/golf/master\+\_\+golf/src/core/\mbox{\hyperlink{Game_8cpp}{Game.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,172 @@
+\hypertarget{classImage}{}\doxysection{Image Class Reference}
+\label{classImage}\index{Image@{Image}}
+
+
+La classe \mbox{\hyperlink{classImage}{Image}} contient une texture S\+DL.  
+
+
+
+
+{\ttfamily \#include $<$Master\+Golf.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classImage_a58edd1c45b4faeb5f789b0d036d02313}{Image}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{Construit}} un objet \mbox{\hyperlink{classImage}{Image}}. Le constructeur remplit la texture par N\+U\+LL. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classImage_a26d9d03985259cbbeb5c503f1670ee33}{load\+From\+File}} (S\+D\+L\+\_\+\+Renderer $\ast$renderer, const char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Change la valeur de la texture par celle comprise dans le fichier. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classImage_ac54fd9ea5f10b0848061578e9177e511}{draw}} (S\+D\+L\+\_\+\+Renderer $\ast$renderer, int x, int y)
+\begin{DoxyCompactList}\small\item\em Affiche la texture entière à l\textquotesingle{}écran a partir des coordonnées en haut a gauche de l\textquotesingle{}image. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classImage_a0c1e55e7d12cfa9b4fcd5f300a32505e}{draw}} (S\+D\+L\+\_\+\+Renderer $\ast$renderer, int x, int y, float sizeX, float sizeY)
+\begin{DoxyCompactList}\small\item\em Affiche la texture redimensionnée à l\textquotesingle{}écran à partir des coordonnées en haut à gauche de l\textquotesingle{}image. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classImage_a33f652e7f8f5bbf3a0910ef315a07094}{draw\+\_\+scale}} (S\+D\+L\+\_\+\+Renderer $\ast$renderer, int x, int y, float scale)
+\begin{DoxyCompactList}\small\item\em Affiche la texture redimensionnée à l\textquotesingle{}aide d\textquotesingle{}un facteur scale (1 = image entière, 0 = vide) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classImage_a12371387ac8767677969f00273bb9842}{draw\+\_\+indicator}} (S\+D\+L\+\_\+\+Renderer $\ast$renderer, int x, int y, float scale)
+\begin{DoxyCompactList}\small\item\em Affiche la texture redimensionnée juste en ordonnée à l\textquotesingle{}aide d\textquotesingle{}un facteur scale (0 = image entière, 1 = vide) Uniquement utilisé pour dessiner le cache sur l\textquotesingle{}indicateur de puissance. \end{DoxyCompactList}\item 
+S\+D\+L\+\_\+\+Rect \mbox{\hyperlink{classImage_a6989920e1b840cfed0d57d5d1eeb3f17}{getrectangle}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Renvoie le rectangle correspondant a la texture d\textquotesingle{}une image (utile pour la fonction S\+D\+L\+\_\+\+Point\+In\+Rect) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+La classe \mbox{\hyperlink{classImage}{Image}} contient une texture S\+DL. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classImage_a58edd1c45b4faeb5f789b0d036d02313}\label{classImage_a58edd1c45b4faeb5f789b0d036d02313}} 
+\index{Image@{Image}!Image@{Image}}
+\index{Image@{Image}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{Image()}{Image()}}
+{\footnotesize\ttfamily Image\+::\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{Construit}} un objet \mbox{\hyperlink{classImage}{Image}}. Le constructeur remplit la texture par N\+U\+LL. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classImage_ac54fd9ea5f10b0848061578e9177e511}\label{classImage_ac54fd9ea5f10b0848061578e9177e511}} 
+\index{Image@{Image}!draw@{draw}}
+\index{draw@{draw}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Image\+::draw (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Affiche la texture entière à l\textquotesingle{}écran a partir des coordonnées en haut a gauche de l\textquotesingle{}image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & \+: le renderer \\
+\hline
+{\em x} & \+: abs du coin haut gauche de l\textquotesingle{}image \\
+\hline
+{\em y} & \+: ordonnée du coin haut gauche de l\textquotesingle{}image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classImage_a0c1e55e7d12cfa9b4fcd5f300a32505e}\label{classImage_a0c1e55e7d12cfa9b4fcd5f300a32505e}} 
+\index{Image@{Image}!draw@{draw}}
+\index{draw@{draw}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Image\+::draw (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{float}]{sizeX,  }\item[{float}]{sizeY }\end{DoxyParamCaption})}
+
+
+
+Affiche la texture redimensionnée à l\textquotesingle{}écran à partir des coordonnées en haut à gauche de l\textquotesingle{}image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & \+: le renderer \\
+\hline
+{\em x} & \+: abs du coin haut gauche de l\textquotesingle{}image \\
+\hline
+{\em y} & \+: ordonnée du coin haut gauche de l\textquotesingle{}image \\
+\hline
+{\em sizeX} & \+: taille abs de l\textquotesingle{}image \\
+\hline
+{\em sizeY} & \+: taille ordonnée de l\textquotesingle{}image ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classImage_a12371387ac8767677969f00273bb9842}\label{classImage_a12371387ac8767677969f00273bb9842}} 
+\index{Image@{Image}!draw\_indicator@{draw\_indicator}}
+\index{draw\_indicator@{draw\_indicator}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{draw\_indicator()}{draw\_indicator()}}
+{\footnotesize\ttfamily void Image\+::draw\+\_\+indicator (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{float}]{scale }\end{DoxyParamCaption})}
+
+
+
+Affiche la texture redimensionnée juste en ordonnée à l\textquotesingle{}aide d\textquotesingle{}un facteur scale (0 = image entière, 1 = vide) Uniquement utilisé pour dessiner le cache sur l\textquotesingle{}indicateur de puissance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & \+: le renderer \\
+\hline
+{\em x} & \+: abs du coin haut gauche de l\textquotesingle{}image \\
+\hline
+{\em y} & \+: ordonnée du coin haut gauche de l\textquotesingle{}image \\
+\hline
+{\em scale} & \+: facteur de réduction de l\textquotesingle{}image (compris entre 0 et 1) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classImage_a33f652e7f8f5bbf3a0910ef315a07094}\label{classImage_a33f652e7f8f5bbf3a0910ef315a07094}} 
+\index{Image@{Image}!draw\_scale@{draw\_scale}}
+\index{draw\_scale@{draw\_scale}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{draw\_scale()}{draw\_scale()}}
+{\footnotesize\ttfamily void Image\+::draw\+\_\+scale (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{float}]{scale }\end{DoxyParamCaption})}
+
+
+
+Affiche la texture redimensionnée à l\textquotesingle{}aide d\textquotesingle{}un facteur scale (1 = image entière, 0 = vide) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & \+: le renderer \\
+\hline
+{\em x} & \+: abs du coin haut gauche de l\textquotesingle{}image \\
+\hline
+{\em y} & \+: ordonnée du coin haut gauche de l\textquotesingle{}image \\
+\hline
+{\em scale} & \+: facteur de réduction de l\textquotesingle{}image (compris entre 0 et 1) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classImage_a6989920e1b840cfed0d57d5d1eeb3f17}\label{classImage_a6989920e1b840cfed0d57d5d1eeb3f17}} 
+\index{Image@{Image}!getrectangle@{getrectangle}}
+\index{getrectangle@{getrectangle}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{getrectangle()}{getrectangle()}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Rect Image\+::getrectangle (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Renvoie le rectangle correspondant a la texture d\textquotesingle{}une image (utile pour la fonction S\+D\+L\+\_\+\+Point\+In\+Rect) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \+: abs du coin haut gauche de l\textquotesingle{}image \\
+\hline
+{\em y} & \+: ordonnée du coin haut gauche de l\textquotesingle{}image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classImage_a26d9d03985259cbbeb5c503f1670ee33}\label{classImage_a26d9d03985259cbbeb5c503f1670ee33}} 
+\index{Image@{Image}!loadFromFile@{loadFromFile}}
+\index{loadFromFile@{loadFromFile}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{loadFromFile()}{loadFromFile()}}
+{\footnotesize\ttfamily void Image\+::load\+From\+File (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{const char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+Change la valeur de la texture par celle comprise dans le fichier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & \+: le renderer \\
+\hline
+{\em filename} & \+: un string contenant le chemin et le nom de l\textquotesingle{}image que l\textquotesingle{}on souhaite charger \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/d/\+Lucas/\+Bureau/\+L\+I\+F\+A\+P4/\+Git remote/master-\/golf/master\+\_\+golf/src/sdl2/\mbox{\hyperlink{MasterGolf_8h}{Master\+Golf.\+h}}\item 
+/mnt/d/\+Lucas/\+Bureau/\+L\+I\+F\+A\+P4/\+Git remote/master-\/golf/master\+\_\+golf/src/sdl2/\mbox{\hyperlink{MasterGolf_8cpp}{Master\+Golf.\+cpp}}\end{DoxyCompactItemize}

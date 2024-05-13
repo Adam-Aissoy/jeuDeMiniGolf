@@ -1,0 +1,384 @@
+\hypertarget{classBall}{}\doxysection{Ball Class Reference}
+\label{classBall}\index{Ball@{Ball}}
+
+
+{\ttfamily \#include $<$Ball.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBall_a86a144d3dad6c953e422e32435923bbb}{Ball}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{Construit}} un objet \mbox{\hyperlink{classBall}{Ball}}. Le constructeur remplit la vitesse à 0 Un vecteur direction de base Et met le booléen Win à true (utile pour la fonction update\+\_\+lvl) \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classBall_ae33cfff7a4c6a8c466611635eee5b242}{get\+VelocityX}} () const
+\begin{DoxyCompactList}\small\item\em Renvoie la valeur de la vitesse en X. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classBall_aa698f0d5c786307a13aaf9522002b38f}{get\+VelocityY}} () const
+\begin{DoxyCompactList}\small\item\em Renvoie la valeur de la vitesse en Y. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classBall_a87a6b494884bded1a50cffd8ca2b2b66}{get\+PositionX}} () const
+\begin{DoxyCompactList}\small\item\em Renvoie la valeur de la position en X. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classBall_ab52b4b45d8f38e660752cb6c6ef8dcd9}{get\+PositionY}} () const
+\begin{DoxyCompactList}\small\item\em Renvoie la valeur de la position en Y. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBall_a14bc6cd283d9abb295b91a5df0c73cc5}{set\+VelocityX}} (float X)
+\begin{DoxyCompactList}\small\item\em change la valeur de la vitesse en X \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBall_a763a0f16171065d94c56f352ed483053}{set\+VelocityY}} (float Y)
+\begin{DoxyCompactList}\small\item\em change la valeur de la vitesse en Y \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBall_a3a042bcf5ede9df75429ce18bb12b2b8}{set\+PositionX}} (float X)
+\begin{DoxyCompactList}\small\item\em change la valeur de la position en X \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBall_abe457fed70fbbd171b97c87b2692bd58}{set\+PositionY}} (float Y)
+\begin{DoxyCompactList}\small\item\em change la valeur de la position en Y \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBall_a5d33a2cdc069b12bbff54060b1c26e7f}{set\+DirX}} (float X)
+\begin{DoxyCompactList}\small\item\em change la valeur de la direction en X \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBall_aeb9f8262c991bb100effd4739993e932}{set\+DirY}} (float Y)
+\begin{DoxyCompactList}\small\item\em change la valeur de la direction en Y \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBall_afa039a01f5f0de8340f7db2c39b40a54}{can\+Move}} () const
+\begin{DoxyCompactList}\small\item\em Renvoie la valeur du booleen Move. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBall_ac062a4f16cfa830f5494a7e6df4c6c15}{is\+Win}} () const
+\begin{DoxyCompactList}\small\item\em Renvoie la valeur du booleen Win. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBall_addf518c567ae946dcb430edcbbf27bb5}{set\+Win}} (bool W)
+\begin{DoxyCompactList}\small\item\em change la valeur du booleen Win \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classBall_a5614b6318412d6eb5941c4a817e091d3}{get\+Scale}} () const
+\begin{DoxyCompactList}\small\item\em Renvoie la valeur du facteur scale. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBall_ae4580b4addab0e5e2113a473888f07c9}{set\+Scale}} (float S)
+\begin{DoxyCompactList}\small\item\em change la valeur du facteur scale \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classBall_ad77d7dfea7a67691059176957b878e57}{get\+Velocity1D}} () const
+\begin{DoxyCompactList}\small\item\em Renvoie un float étant la composée du vecteur de vitesse (grâce à Pythagore) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBall_a0112eae19fc817acf3c4f6d94f8e49bc}{wallscollision}} (vector$<$ \mbox{\hyperlink{classWall}{Wall}} $>$ \&Walls, double delta\+Time, \mbox{\hyperlink{classVec2f}{Vec2f}} wsizes, int bsize)
+\begin{DoxyCompactList}\small\item\em Gère la collision avec les murs du terrain. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBall_acd7ade46291d755e9822feb1227c5201}{sandscollision}} (vector$<$ \mbox{\hyperlink{classSand}{Sand}} $>$ \&Sands, \mbox{\hyperlink{classVec2f}{Vec2f}} wsizes, int bsize)
+\begin{DoxyCompactList}\small\item\em Gère la collision avec les sables du terrain (ralentie la vitesse si on se situe sur une case de sable) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBall_a5ac55b10d8522ecfde9d3cd3a07af8c0}{holecollision}} (\mbox{\hyperlink{classVec2f}{Vec2f}} Hole, double delta\+Time, int bsize)
+\begin{DoxyCompactList}\small\item\em Gère la collision avec le trou du terrain (+ petite animation quand la balle tombe dedans) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBall_a783d3843428fae90855913dcdbf865fd}{update}} (vector$<$ \mbox{\hyperlink{classWall}{Wall}} $>$ \&Walls, vector$<$ \mbox{\hyperlink{classSand}{Sand}} $>$ \&Sands, int DimX, int DimY, \mbox{\hyperlink{classVec2f}{Vec2f}} Hole, double delta\+Time, \mbox{\hyperlink{classVec2f}{Vec2f}} wsizes, int bsize)
+\begin{DoxyCompactList}\small\item\em Gère toute la physique de la balle et inclue (wallscollision, sandscollision, holecollision) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBall_adc4bb5735296bdc9db9faa162ea23cdc}{swing}} (float PX, float PY, int Dx, int Dy)
+\begin{DoxyCompactList}\small\item\em Une fonction générale pour tirer (les paramètres sont calculés différemment pour sdl et txt) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBall_a86a144d3dad6c953e422e32435923bbb}\label{classBall_a86a144d3dad6c953e422e32435923bbb}} 
+\index{Ball@{Ball}!Ball@{Ball}}
+\index{Ball@{Ball}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{Ball()}{Ball()}}
+{\footnotesize\ttfamily Ball\+::\+Ball (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{Construit}} un objet \mbox{\hyperlink{classBall}{Ball}}. Le constructeur remplit la vitesse à 0 Un vecteur direction de base Et met le booléen Win à true (utile pour la fonction update\+\_\+lvl) 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBall_afa039a01f5f0de8340f7db2c39b40a54}\label{classBall_afa039a01f5f0de8340f7db2c39b40a54}} 
+\index{Ball@{Ball}!canMove@{canMove}}
+\index{canMove@{canMove}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{canMove()}{canMove()}}
+{\footnotesize\ttfamily bool Ball\+::can\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Renvoie la valeur du booleen Move. 
+
+\mbox{\Hypertarget{classBall_a87a6b494884bded1a50cffd8ca2b2b66}\label{classBall_a87a6b494884bded1a50cffd8ca2b2b66}} 
+\index{Ball@{Ball}!getPositionX@{getPositionX}}
+\index{getPositionX@{getPositionX}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{getPositionX()}{getPositionX()}}
+{\footnotesize\ttfamily float Ball\+::get\+PositionX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Renvoie la valeur de la position en X. 
+
+\mbox{\Hypertarget{classBall_ab52b4b45d8f38e660752cb6c6ef8dcd9}\label{classBall_ab52b4b45d8f38e660752cb6c6ef8dcd9}} 
+\index{Ball@{Ball}!getPositionY@{getPositionY}}
+\index{getPositionY@{getPositionY}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{getPositionY()}{getPositionY()}}
+{\footnotesize\ttfamily float Ball\+::get\+PositionY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Renvoie la valeur de la position en Y. 
+
+\mbox{\Hypertarget{classBall_a5614b6318412d6eb5941c4a817e091d3}\label{classBall_a5614b6318412d6eb5941c4a817e091d3}} 
+\index{Ball@{Ball}!getScale@{getScale}}
+\index{getScale@{getScale}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{getScale()}{getScale()}}
+{\footnotesize\ttfamily float Ball\+::get\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Renvoie la valeur du facteur scale. 
+
+\mbox{\Hypertarget{classBall_ad77d7dfea7a67691059176957b878e57}\label{classBall_ad77d7dfea7a67691059176957b878e57}} 
+\index{Ball@{Ball}!getVelocity1D@{getVelocity1D}}
+\index{getVelocity1D@{getVelocity1D}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{getVelocity1D()}{getVelocity1D()}}
+{\footnotesize\ttfamily float Ball\+::get\+Velocity1D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Renvoie un float étant la composée du vecteur de vitesse (grâce à Pythagore) 
+
+\mbox{\Hypertarget{classBall_ae33cfff7a4c6a8c466611635eee5b242}\label{classBall_ae33cfff7a4c6a8c466611635eee5b242}} 
+\index{Ball@{Ball}!getVelocityX@{getVelocityX}}
+\index{getVelocityX@{getVelocityX}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{getVelocityX()}{getVelocityX()}}
+{\footnotesize\ttfamily float Ball\+::get\+VelocityX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Renvoie la valeur de la vitesse en X. 
+
+\mbox{\Hypertarget{classBall_aa698f0d5c786307a13aaf9522002b38f}\label{classBall_aa698f0d5c786307a13aaf9522002b38f}} 
+\index{Ball@{Ball}!getVelocityY@{getVelocityY}}
+\index{getVelocityY@{getVelocityY}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{getVelocityY()}{getVelocityY()}}
+{\footnotesize\ttfamily float Ball\+::get\+VelocityY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Renvoie la valeur de la vitesse en Y. 
+
+\mbox{\Hypertarget{classBall_a5ac55b10d8522ecfde9d3cd3a07af8c0}\label{classBall_a5ac55b10d8522ecfde9d3cd3a07af8c0}} 
+\index{Ball@{Ball}!holecollision@{holecollision}}
+\index{holecollision@{holecollision}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{holecollision()}{holecollision()}}
+{\footnotesize\ttfamily void Ball\+::holecollision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVec2f}{Vec2f}}}]{Hole,  }\item[{double}]{delta\+Time,  }\item[{int}]{bsize }\end{DoxyParamCaption})}
+
+
+
+Gère la collision avec le trou du terrain (+ petite animation quand la balle tombe dedans) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Hole} & \+: Vecteur de la position du trou du niveau \\
+\hline
+{\em delta\+Time} & \+: La différence de temps entre 2 frames (importante ici pour déplacer la balle pour une animation) \\
+\hline
+{\em bsize} & \+: La taille (carré) de la balle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBall_ac062a4f16cfa830f5494a7e6df4c6c15}\label{classBall_ac062a4f16cfa830f5494a7e6df4c6c15}} 
+\index{Ball@{Ball}!isWin@{isWin}}
+\index{isWin@{isWin}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{isWin()}{isWin()}}
+{\footnotesize\ttfamily bool Ball\+::is\+Win (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Renvoie la valeur du booleen Win. 
+
+\mbox{\Hypertarget{classBall_acd7ade46291d755e9822feb1227c5201}\label{classBall_acd7ade46291d755e9822feb1227c5201}} 
+\index{Ball@{Ball}!sandscollision@{sandscollision}}
+\index{sandscollision@{sandscollision}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{sandscollision()}{sandscollision()}}
+{\footnotesize\ttfamily void Ball\+::sandscollision (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classSand}{Sand}} $>$ \&}]{Sands,  }\item[{\mbox{\hyperlink{classVec2f}{Vec2f}}}]{wsizes,  }\item[{int}]{bsize }\end{DoxyParamCaption})}
+
+
+
+Gère la collision avec les sables du terrain (ralentie la vitesse si on se situe sur une case de sable) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Sands} & \+: Le vecteur comportant tous les sables du niveau \\
+\hline
+{\em wsizes} & \+: Un vecteur de 2 floats comportant la taille des murs en X et en Y (qui peut changer en fonction du niveau) \\
+\hline
+{\em bsize} & \+: La taille (carré) de la balle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBall_a5d33a2cdc069b12bbff54060b1c26e7f}\label{classBall_a5d33a2cdc069b12bbff54060b1c26e7f}} 
+\index{Ball@{Ball}!setDirX@{setDirX}}
+\index{setDirX@{setDirX}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{setDirX()}{setDirX()}}
+{\footnotesize\ttfamily void Ball\+::set\+DirX (\begin{DoxyParamCaption}\item[{float}]{X }\end{DoxyParamCaption})}
+
+
+
+change la valeur de la direction en X 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \+: un float (normalement soit 1 ou -\/1) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBall_aeb9f8262c991bb100effd4739993e932}\label{classBall_aeb9f8262c991bb100effd4739993e932}} 
+\index{Ball@{Ball}!setDirY@{setDirY}}
+\index{setDirY@{setDirY}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{setDirY()}{setDirY()}}
+{\footnotesize\ttfamily void Ball\+::set\+DirY (\begin{DoxyParamCaption}\item[{float}]{Y }\end{DoxyParamCaption})}
+
+
+
+change la valeur de la direction en Y 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \+: un float (normalement soit 1 ou -\/1) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBall_a3a042bcf5ede9df75429ce18bb12b2b8}\label{classBall_a3a042bcf5ede9df75429ce18bb12b2b8}} 
+\index{Ball@{Ball}!setPositionX@{setPositionX}}
+\index{setPositionX@{setPositionX}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{setPositionX()}{setPositionX()}}
+{\footnotesize\ttfamily void Ball\+::set\+PositionX (\begin{DoxyParamCaption}\item[{float}]{X }\end{DoxyParamCaption})}
+
+
+
+change la valeur de la position en X 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \+: un float \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBall_abe457fed70fbbd171b97c87b2692bd58}\label{classBall_abe457fed70fbbd171b97c87b2692bd58}} 
+\index{Ball@{Ball}!setPositionY@{setPositionY}}
+\index{setPositionY@{setPositionY}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{setPositionY()}{setPositionY()}}
+{\footnotesize\ttfamily void Ball\+::set\+PositionY (\begin{DoxyParamCaption}\item[{float}]{Y }\end{DoxyParamCaption})}
+
+
+
+change la valeur de la position en Y 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \+: un float \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBall_ae4580b4addab0e5e2113a473888f07c9}\label{classBall_ae4580b4addab0e5e2113a473888f07c9}} 
+\index{Ball@{Ball}!setScale@{setScale}}
+\index{setScale@{setScale}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{setScale()}{setScale()}}
+{\footnotesize\ttfamily void Ball\+::set\+Scale (\begin{DoxyParamCaption}\item[{float}]{S }\end{DoxyParamCaption})}
+
+
+
+change la valeur du facteur scale 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S} & \+: la valeur de scale que l\textquotesingle{}on veux avoir \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBall_a14bc6cd283d9abb295b91a5df0c73cc5}\label{classBall_a14bc6cd283d9abb295b91a5df0c73cc5}} 
+\index{Ball@{Ball}!setVelocityX@{setVelocityX}}
+\index{setVelocityX@{setVelocityX}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{setVelocityX()}{setVelocityX()}}
+{\footnotesize\ttfamily void Ball\+::set\+VelocityX (\begin{DoxyParamCaption}\item[{float}]{X }\end{DoxyParamCaption})}
+
+
+
+change la valeur de la vitesse en X 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \+: un float \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBall_a763a0f16171065d94c56f352ed483053}\label{classBall_a763a0f16171065d94c56f352ed483053}} 
+\index{Ball@{Ball}!setVelocityY@{setVelocityY}}
+\index{setVelocityY@{setVelocityY}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{setVelocityY()}{setVelocityY()}}
+{\footnotesize\ttfamily void Ball\+::set\+VelocityY (\begin{DoxyParamCaption}\item[{float}]{Y }\end{DoxyParamCaption})}
+
+
+
+change la valeur de la vitesse en Y 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \+: un float \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBall_addf518c567ae946dcb430edcbbf27bb5}\label{classBall_addf518c567ae946dcb430edcbbf27bb5}} 
+\index{Ball@{Ball}!setWin@{setWin}}
+\index{setWin@{setWin}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{setWin()}{setWin()}}
+{\footnotesize\ttfamily void Ball\+::set\+Win (\begin{DoxyParamCaption}\item[{bool}]{W }\end{DoxyParamCaption})}
+
+
+
+change la valeur du booleen Win 
+
+
+\begin{DoxyParams}{Parameters}
+{\em W} & \+: la valeur de Win que l\textquotesingle{}on veux avoir \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBall_adc4bb5735296bdc9db9faa162ea23cdc}\label{classBall_adc4bb5735296bdc9db9faa162ea23cdc}} 
+\index{Ball@{Ball}!swing@{swing}}
+\index{swing@{swing}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{swing()}{swing()}}
+{\footnotesize\ttfamily void Ball\+::swing (\begin{DoxyParamCaption}\item[{float}]{PX,  }\item[{float}]{PY,  }\item[{int}]{Dx,  }\item[{int}]{Dy }\end{DoxyParamCaption})}
+
+
+
+Une fonction générale pour tirer (les paramètres sont calculés différemment pour sdl et txt) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em PX} & \+: Une float représentant la puissance en X \\
+\hline
+{\em PY} & \+: Une float représentant la puissance en Y \\
+\hline
+{\em Dx} & \+: Un entier représentant la direction en X \\
+\hline
+{\em Dy} & \+: Un entier représentant la direction en Y \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBall_a783d3843428fae90855913dcdbf865fd}\label{classBall_a783d3843428fae90855913dcdbf865fd}} 
+\index{Ball@{Ball}!update@{update}}
+\index{update@{update}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Ball\+::update (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classWall}{Wall}} $>$ \&}]{Walls,  }\item[{vector$<$ \mbox{\hyperlink{classSand}{Sand}} $>$ \&}]{Sands,  }\item[{int}]{DimX,  }\item[{int}]{DimY,  }\item[{\mbox{\hyperlink{classVec2f}{Vec2f}}}]{Hole,  }\item[{double}]{delta\+Time,  }\item[{\mbox{\hyperlink{classVec2f}{Vec2f}}}]{wsizes,  }\item[{int}]{bsize }\end{DoxyParamCaption})}
+
+
+
+Gère toute la physique de la balle et inclue (wallscollision, sandscollision, holecollision) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Walls} & \+: Le vecteur comportant tous les murs du niveau \\
+\hline
+{\em Sands} & \+: Le vecteur comportant tous les sables du niveau \\
+\hline
+{\em Hole} & \+: Vecteur de la position du trou du niveau \\
+\hline
+{\em DimX} & \+: La dimension en X du niveau \\
+\hline
+{\em DimY} & \+: La dimension en Y du niveau \\
+\hline
+{\em delta\+Time} & \+: La différence de temps entre 2 frames (calculés plus haut dans la chaine des classes) \\
+\hline
+{\em wsizes} & \+: Un vecteur de 2 floats comportant la taille des murs en X et en Y (qui peut changer en fonction du niveau) \\
+\hline
+{\em bsize} & \+: La taille (carré) de la balle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBall_a0112eae19fc817acf3c4f6d94f8e49bc}\label{classBall_a0112eae19fc817acf3c4f6d94f8e49bc}} 
+\index{Ball@{Ball}!wallscollision@{wallscollision}}
+\index{wallscollision@{wallscollision}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{wallscollision()}{wallscollision()}}
+{\footnotesize\ttfamily void Ball\+::wallscollision (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classWall}{Wall}} $>$ \&}]{Walls,  }\item[{double}]{delta\+Time,  }\item[{\mbox{\hyperlink{classVec2f}{Vec2f}}}]{wsizes,  }\item[{int}]{bsize }\end{DoxyParamCaption})}
+
+
+
+Gère la collision avec les murs du terrain. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Walls} & \+: Le vecteur comportant tous les murs du niveau \\
+\hline
+{\em delta\+Time} & \+: La différence de temps entre 2 frames (importante pour calculer la position de la balle dans la frame suivante) \\
+\hline
+{\em wsizes} & \+: Un vecteur de 2 floats comportant la taille des murs en X et en Y (qui peut changer en fonction du niveau) \\
+\hline
+{\em bsize} & \+: La taille (carré) de la balle \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/d/\+Lucas/\+Bureau/\+L\+I\+F\+A\+P4/\+Git remote/master-\/golf/master\+\_\+golf/src/core/\mbox{\hyperlink{Ball_8h}{Ball.\+h}}\item 
+/mnt/d/\+Lucas/\+Bureau/\+L\+I\+F\+A\+P4/\+Git remote/master-\/golf/master\+\_\+golf/src/core/\mbox{\hyperlink{Ball_8cpp}{Ball.\+cpp}}\end{DoxyCompactItemize}

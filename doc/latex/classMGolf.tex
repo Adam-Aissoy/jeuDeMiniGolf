@@ -1,0 +1,405 @@
+\hypertarget{classMGolf}{}\doxysection{M\+Golf Class Reference}
+\label{classMGolf}\index{MGolf@{MGolf}}
+
+
+La classe \mbox{\hyperlink{classMGolf}{M\+Golf}} contient \+:  
+
+
+
+
+{\ttfamily \#include $<$Master\+Golf.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMGolf_a53577acf3b00f55cd6c5f2d6a898350e}{M\+Golf}} (int DimX, int DimY)
+\begin{DoxyCompactList}\small\item\em {\bfseries{Construit}} un objet \mbox{\hyperlink{classMGolf}{M\+Golf}}. Le constructeur remplit toutes les valeurs par défaut de la class \mbox{\hyperlink{classMGolf}{M\+Golf}} Créer une fenêtre et un renderer Charge toutes les images \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMGolf_abc7775b71d65b0ad8b1129c6d3ddae20}{$\sim$\+M\+Golf}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{Detruit}} un objet \mbox{\hyperlink{classMGolf}{M\+Golf}}. Détruit la window Détruit le renderer Quitte S\+DL \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMGolf_a95b8541607563e3cf94de80c7286904a}{title\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em Fonction de title\+Screen montre une première image pendant 2 secondes puis montre une autre image en attendant un clic gauche pour commencer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMGolf_acae30ba2e0d88a5c50426954942f86b7}{swing\+\_\+sdl}} (int S\+MX, int S\+MY, float \mbox{\hyperlink{classMGolf_a7b1f81bb3898f52e239ba833fffcb607}{strength}})
+\begin{DoxyCompactList}\small\item\em Fonction de tir \+: transforme le tir S\+DL en 4 valeurs pour utiliser la fonction B.\+swing() (cf \mbox{\hyperlink{Ball_8h}{Ball.\+h}}) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMGolf_a5767fa7aad0beea5f0c9fd903df9a1a1}{Display}} ()
+\begin{DoxyCompactList}\small\item\em Procédure d\textquotesingle{}affichage, affiche à l\textquotesingle{}écran une \mbox{\hyperlink{classGame}{Game}} (cf \mbox{\hyperlink{Game_8h}{Game.\+h}}) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMGolf_ac83b3ac48ff2892c8e352f3f46c46a7f}{Play}} ()
+\begin{DoxyCompactList}\small\item\em Procédure de jeu, joue une \mbox{\hyperlink{classGame}{Game}} récupère les clics et update la balle et les niveaux en conséquence. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMGolf_ab53977fea4fefd6292cdefc412e079da}{loop}} ()
+\begin{DoxyCompactList}\small\item\em Boucle finale, agit en fonction de l\textquotesingle{}entier state (0 pour title Screen, 1 pour jouer) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classMGolf_a289221c6074a49a14feb8c1946a85091}{quit}}
+\item 
+S\+D\+L\+\_\+\+Event \mbox{\hyperlink{classMGolf_aefcd1f0320c5108ef051eb4bd1d82344}{events}}
+\item 
+\mbox{\hyperlink{classGame}{Game}} \mbox{\hyperlink{classMGolf_a5f20eed3e17f8ec8c8c2a797b153edc3}{G}}
+\item 
+S\+D\+L\+\_\+\+Window $\ast$ \mbox{\hyperlink{classMGolf_adb7d5cda27559d7f2ee0423910b16a79}{window}}
+\item 
+S\+D\+L\+\_\+\+Renderer $\ast$ \mbox{\hyperlink{classMGolf_a1b9021aaadbaaaa8554947bf77f29d6d}{renderer}}
+\item 
+S\+D\+L\+\_\+\+Point \mbox{\hyperlink{classMGolf_a8cfb0790cd031624f0237431ad602b1a}{L\+Mouse\+Down}}
+\item 
+S\+D\+L\+\_\+\+Point \mbox{\hyperlink{classMGolf_a0902979063b8b29d795758b35d97d312}{L\+Mouse\+UP}}
+\item 
+S\+D\+L\+\_\+\+Point \mbox{\hyperlink{classMGolf_a269f380cfb0e60d9ad09a73c026fb215}{mouse\+Motion}}
+\item 
+S\+D\+L\+\_\+\+Rect \mbox{\hyperlink{classMGolf_a98f975f9163b83a4930ea950ec9f645a}{rec\+\_\+ball}}
+\item 
+S\+D\+L\+\_\+\+Rect \mbox{\hyperlink{classMGolf_a1c8b5e3500d843db99b8715713d9e761}{rec\+\_\+plus}}
+\item 
+\mbox{\hyperlink{classImage}{Image}} \mbox{\hyperlink{classMGolf_a8e71f5ee56baca537c62acd614d16d94}{im\+\_\+loadingbg}}
+\item 
+\mbox{\hyperlink{classImage}{Image}} \mbox{\hyperlink{classMGolf_a43de64e3548ff295b6074f817fb29c7f}{im\+\_\+titlescreenbg}}
+\item 
+\mbox{\hyperlink{classImage}{Image}} \mbox{\hyperlink{classMGolf_a37b2dd375e98e7ab8934149fdfa6ca04}{im\+\_\+ball}}
+\item 
+\mbox{\hyperlink{classImage}{Image}} \mbox{\hyperlink{classMGolf_a0ed8c3e039475f61d2bf9afd0d4a140e}{im\+\_\+wall}}
+\item 
+\mbox{\hyperlink{classImage}{Image}} \mbox{\hyperlink{classMGolf_af45c42a510062353cfa580ac3827a527}{im\+\_\+wall\+\_\+shadow}}
+\item 
+\mbox{\hyperlink{classImage}{Image}} \mbox{\hyperlink{classMGolf_a27a4ab348d7598f0f321af514cce4f50}{im\+\_\+bg1}}
+\item 
+\mbox{\hyperlink{classImage}{Image}} \mbox{\hyperlink{classMGolf_a6b9891221d3d65f9b0c7b487e8fc336f}{im\+\_\+bg2}}
+\item 
+\mbox{\hyperlink{classImage}{Image}} \mbox{\hyperlink{classMGolf_a4f2a14121ae8a4249bd91610038b722f}{im\+\_\+hole}}
+\item 
+\mbox{\hyperlink{classImage}{Image}} \mbox{\hyperlink{classMGolf_a256b296ff514ade6f05a1009d1f9d5b9}{im\+\_\+sand}}
+\item 
+\mbox{\hyperlink{classImage}{Image}} \mbox{\hyperlink{classMGolf_a5f181f40ee9b347d5ff325c0c7c744b9}{im\+\_\+strength\+\_\+bar}}
+\item 
+\mbox{\hyperlink{classImage}{Image}} \mbox{\hyperlink{classMGolf_a6a3ffa9a9037e26a2ae04218fa640ed2}{im\+\_\+strength\+\_\+indicator}}
+\item 
+\mbox{\hyperlink{classImage}{Image}} \mbox{\hyperlink{classMGolf_a778c6042ad446ded3eed7c517838157c}{im\+\_\+btwall}}
+\item 
+\mbox{\hyperlink{classImage}{Image}} \mbox{\hyperlink{classMGolf_aeda84198eb6f535bf330db52e5375ba3}{im\+\_\+rlwall}}
+\item 
+\mbox{\hyperlink{classImage}{Image}} \mbox{\hyperlink{classMGolf_ac800d440693a40a2bd7d238486a380be}{im\+\_\+plus}}
+\item 
+Uint64 \mbox{\hyperlink{classMGolf_a952b3409b093fefba05aaf4df5b6b891}{current\+Tick}}
+\item 
+Uint64 \mbox{\hyperlink{classMGolf_a6a55839952bf30f86c3c3cda8e7784a3}{last\+Tick}}
+\item 
+double \mbox{\hyperlink{classMGolf_a1434626e86892e12a03d287eaa6b7244}{delta\+Time}}
+\item 
+int \mbox{\hyperlink{classMGolf_a6e01f7f7d5f02cc56e70225138fb909e}{ScreenX}}
+\item 
+int \mbox{\hyperlink{classMGolf_aa4f03b832b5b1e53618525ca2059b087}{ScreenY}}
+\item 
+int \mbox{\hyperlink{classMGolf_a89575ac3c23ba9fdaa0bdd403587e2c8}{state}}
+\item 
+float \mbox{\hyperlink{classMGolf_a7b1f81bb3898f52e239ba833fffcb607}{strength}}
+\item 
+bool \mbox{\hyperlink{classMGolf_ac8ac9c5680cebe898bf4002a31a9ad43}{M\+Pressed}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+La classe \mbox{\hyperlink{classMGolf}{M\+Golf}} contient \+: 
+
+
+\begin{DoxyItemize}
+\item Une window, un renderer
+\item Toutes les images nécessaires à l\textquotesingle{}affichage
+\item Le delta Time
+\item 1 \mbox{\hyperlink{classGame}{Game}}
+\item Les entiers correspondant à la taille de la fenêtre
+\item Une variable state (0 pour title Screen 1 pour Play)
+\item Un booléen M\+Pressed correspondant au clic gauche de la souris
+\item Des S\+D\+L\+\_\+\+Point pour les différentes positions de la souris
+\item Des S\+D\+L\+\_\+\+Rect pour pouvoir clicker sur des images.
+\item Un booléen quit qui reste false tant que l\textquotesingle{}on n\textquotesingle{}a pas quitté la fenêtre 
+\end{DoxyItemize}
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMGolf_a53577acf3b00f55cd6c5f2d6a898350e}\label{classMGolf_a53577acf3b00f55cd6c5f2d6a898350e}} 
+\index{MGolf@{MGolf}!MGolf@{MGolf}}
+\index{MGolf@{MGolf}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{MGolf()}{MGolf()}}
+{\footnotesize\ttfamily M\+Golf\+::\+M\+Golf (\begin{DoxyParamCaption}\item[{int}]{DimX,  }\item[{int}]{DimY }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{Construit}} un objet \mbox{\hyperlink{classMGolf}{M\+Golf}}. Le constructeur remplit toutes les valeurs par défaut de la class \mbox{\hyperlink{classMGolf}{M\+Golf}} Créer une fenêtre et un renderer Charge toutes les images 
+
+
+\begin{DoxyParams}{Parameters}
+{\em DimX} & \+: Dimension X de la fenêtre \\
+\hline
+{\em DimY} & \+: Dimension Y de la fenêtre \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMGolf_abc7775b71d65b0ad8b1129c6d3ddae20}\label{classMGolf_abc7775b71d65b0ad8b1129c6d3ddae20}} 
+\index{MGolf@{MGolf}!````~MGolf@{$\sim$MGolf}}
+\index{````~MGolf@{$\sim$MGolf}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{$\sim$MGolf()}{~MGolf()}}
+{\footnotesize\ttfamily M\+Golf\+::$\sim$\+M\+Golf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{Detruit}} un objet \mbox{\hyperlink{classMGolf}{M\+Golf}}. Détruit la window Détruit le renderer Quitte S\+DL 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMGolf_a5767fa7aad0beea5f0c9fd903df9a1a1}\label{classMGolf_a5767fa7aad0beea5f0c9fd903df9a1a1}} 
+\index{MGolf@{MGolf}!Display@{Display}}
+\index{Display@{Display}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{Display()}{Display()}}
+{\footnotesize\ttfamily void M\+Golf\+::\+Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Procédure d\textquotesingle{}affichage, affiche à l\textquotesingle{}écran une \mbox{\hyperlink{classGame}{Game}} (cf \mbox{\hyperlink{Game_8h}{Game.\+h}}) 
+
+\mbox{\Hypertarget{classMGolf_ab53977fea4fefd6292cdefc412e079da}\label{classMGolf_ab53977fea4fefd6292cdefc412e079da}} 
+\index{MGolf@{MGolf}!loop@{loop}}
+\index{loop@{loop}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{loop()}{loop()}}
+{\footnotesize\ttfamily void M\+Golf\+::loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Boucle finale, agit en fonction de l\textquotesingle{}entier state (0 pour title Screen, 1 pour jouer) 
+
+\mbox{\Hypertarget{classMGolf_ac83b3ac48ff2892c8e352f3f46c46a7f}\label{classMGolf_ac83b3ac48ff2892c8e352f3f46c46a7f}} 
+\index{MGolf@{MGolf}!Play@{Play}}
+\index{Play@{Play}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{Play()}{Play()}}
+{\footnotesize\ttfamily void M\+Golf\+::\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Procédure de jeu, joue une \mbox{\hyperlink{classGame}{Game}} récupère les clics et update la balle et les niveaux en conséquence. 
+
+\mbox{\Hypertarget{classMGolf_acae30ba2e0d88a5c50426954942f86b7}\label{classMGolf_acae30ba2e0d88a5c50426954942f86b7}} 
+\index{MGolf@{MGolf}!swing\_sdl@{swing\_sdl}}
+\index{swing\_sdl@{swing\_sdl}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{swing\_sdl()}{swing\_sdl()}}
+{\footnotesize\ttfamily void M\+Golf\+::swing\+\_\+sdl (\begin{DoxyParamCaption}\item[{int}]{S\+MX,  }\item[{int}]{S\+MY,  }\item[{float}]{strength }\end{DoxyParamCaption})}
+
+
+
+Fonction de tir \+: transforme le tir S\+DL en 4 valeurs pour utiliser la fonction B.\+swing() (cf \mbox{\hyperlink{Ball_8h}{Ball.\+h}}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+MX} & \+: entier correspondant à la position en X du relâchement de la souris après avoir clicker sur la balle \\
+\hline
+{\em S\+MY} & \+: entier correspondant à la position en Y du relâchement de la souris après avoir clicker sur la balle \\
+\hline
+{\em strength} & \+: float compris entre 0 et 1 correspondant à la force du relâchement par rapport à un cercle autour de la balle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMGolf_a95b8541607563e3cf94de80c7286904a}\label{classMGolf_a95b8541607563e3cf94de80c7286904a}} 
+\index{MGolf@{MGolf}!titleScreen@{titleScreen}}
+\index{titleScreen@{titleScreen}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{titleScreen()}{titleScreen()}}
+{\footnotesize\ttfamily void M\+Golf\+::title\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fonction de title\+Screen montre une première image pendant 2 secondes puis montre une autre image en attendant un clic gauche pour commencer. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classMGolf_a952b3409b093fefba05aaf4df5b6b891}\label{classMGolf_a952b3409b093fefba05aaf4df5b6b891}} 
+\index{MGolf@{MGolf}!currentTick@{currentTick}}
+\index{currentTick@{currentTick}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{currentTick}{currentTick}}
+{\footnotesize\ttfamily Uint64 M\+Golf\+::current\+Tick}
+
+\mbox{\Hypertarget{classMGolf_a1434626e86892e12a03d287eaa6b7244}\label{classMGolf_a1434626e86892e12a03d287eaa6b7244}} 
+\index{MGolf@{MGolf}!deltaTime@{deltaTime}}
+\index{deltaTime@{deltaTime}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{deltaTime}{deltaTime}}
+{\footnotesize\ttfamily double M\+Golf\+::delta\+Time}
+
+\mbox{\Hypertarget{classMGolf_aefcd1f0320c5108ef051eb4bd1d82344}\label{classMGolf_aefcd1f0320c5108ef051eb4bd1d82344}} 
+\index{MGolf@{MGolf}!events@{events}}
+\index{events@{events}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{events}{events}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Event M\+Golf\+::events}
+
+\mbox{\Hypertarget{classMGolf_a5f20eed3e17f8ec8c8c2a797b153edc3}\label{classMGolf_a5f20eed3e17f8ec8c8c2a797b153edc3}} 
+\index{MGolf@{MGolf}!G@{G}}
+\index{G@{G}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{G}{G}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGame}{Game}} M\+Golf\+::G}
+
+\mbox{\Hypertarget{classMGolf_a37b2dd375e98e7ab8934149fdfa6ca04}\label{classMGolf_a37b2dd375e98e7ab8934149fdfa6ca04}} 
+\index{MGolf@{MGolf}!im\_ball@{im\_ball}}
+\index{im\_ball@{im\_ball}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{im\_ball}{im\_ball}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classImage}{Image}} M\+Golf\+::im\+\_\+ball}
+
+\mbox{\Hypertarget{classMGolf_a27a4ab348d7598f0f321af514cce4f50}\label{classMGolf_a27a4ab348d7598f0f321af514cce4f50}} 
+\index{MGolf@{MGolf}!im\_bg1@{im\_bg1}}
+\index{im\_bg1@{im\_bg1}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{im\_bg1}{im\_bg1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classImage}{Image}} M\+Golf\+::im\+\_\+bg1}
+
+\mbox{\Hypertarget{classMGolf_a6b9891221d3d65f9b0c7b487e8fc336f}\label{classMGolf_a6b9891221d3d65f9b0c7b487e8fc336f}} 
+\index{MGolf@{MGolf}!im\_bg2@{im\_bg2}}
+\index{im\_bg2@{im\_bg2}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{im\_bg2}{im\_bg2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classImage}{Image}} M\+Golf\+::im\+\_\+bg2}
+
+\mbox{\Hypertarget{classMGolf_a778c6042ad446ded3eed7c517838157c}\label{classMGolf_a778c6042ad446ded3eed7c517838157c}} 
+\index{MGolf@{MGolf}!im\_btwall@{im\_btwall}}
+\index{im\_btwall@{im\_btwall}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{im\_btwall}{im\_btwall}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classImage}{Image}} M\+Golf\+::im\+\_\+btwall}
+
+\mbox{\Hypertarget{classMGolf_a4f2a14121ae8a4249bd91610038b722f}\label{classMGolf_a4f2a14121ae8a4249bd91610038b722f}} 
+\index{MGolf@{MGolf}!im\_hole@{im\_hole}}
+\index{im\_hole@{im\_hole}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{im\_hole}{im\_hole}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classImage}{Image}} M\+Golf\+::im\+\_\+hole}
+
+\mbox{\Hypertarget{classMGolf_a8e71f5ee56baca537c62acd614d16d94}\label{classMGolf_a8e71f5ee56baca537c62acd614d16d94}} 
+\index{MGolf@{MGolf}!im\_loadingbg@{im\_loadingbg}}
+\index{im\_loadingbg@{im\_loadingbg}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{im\_loadingbg}{im\_loadingbg}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classImage}{Image}} M\+Golf\+::im\+\_\+loadingbg}
+
+\mbox{\Hypertarget{classMGolf_ac800d440693a40a2bd7d238486a380be}\label{classMGolf_ac800d440693a40a2bd7d238486a380be}} 
+\index{MGolf@{MGolf}!im\_plus@{im\_plus}}
+\index{im\_plus@{im\_plus}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{im\_plus}{im\_plus}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classImage}{Image}} M\+Golf\+::im\+\_\+plus}
+
+\mbox{\Hypertarget{classMGolf_aeda84198eb6f535bf330db52e5375ba3}\label{classMGolf_aeda84198eb6f535bf330db52e5375ba3}} 
+\index{MGolf@{MGolf}!im\_rlwall@{im\_rlwall}}
+\index{im\_rlwall@{im\_rlwall}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{im\_rlwall}{im\_rlwall}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classImage}{Image}} M\+Golf\+::im\+\_\+rlwall}
+
+\mbox{\Hypertarget{classMGolf_a256b296ff514ade6f05a1009d1f9d5b9}\label{classMGolf_a256b296ff514ade6f05a1009d1f9d5b9}} 
+\index{MGolf@{MGolf}!im\_sand@{im\_sand}}
+\index{im\_sand@{im\_sand}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{im\_sand}{im\_sand}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classImage}{Image}} M\+Golf\+::im\+\_\+sand}
+
+\mbox{\Hypertarget{classMGolf_a5f181f40ee9b347d5ff325c0c7c744b9}\label{classMGolf_a5f181f40ee9b347d5ff325c0c7c744b9}} 
+\index{MGolf@{MGolf}!im\_strength\_bar@{im\_strength\_bar}}
+\index{im\_strength\_bar@{im\_strength\_bar}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{im\_strength\_bar}{im\_strength\_bar}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classImage}{Image}} M\+Golf\+::im\+\_\+strength\+\_\+bar}
+
+\mbox{\Hypertarget{classMGolf_a6a3ffa9a9037e26a2ae04218fa640ed2}\label{classMGolf_a6a3ffa9a9037e26a2ae04218fa640ed2}} 
+\index{MGolf@{MGolf}!im\_strength\_indicator@{im\_strength\_indicator}}
+\index{im\_strength\_indicator@{im\_strength\_indicator}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{im\_strength\_indicator}{im\_strength\_indicator}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classImage}{Image}} M\+Golf\+::im\+\_\+strength\+\_\+indicator}
+
+\mbox{\Hypertarget{classMGolf_a43de64e3548ff295b6074f817fb29c7f}\label{classMGolf_a43de64e3548ff295b6074f817fb29c7f}} 
+\index{MGolf@{MGolf}!im\_titlescreenbg@{im\_titlescreenbg}}
+\index{im\_titlescreenbg@{im\_titlescreenbg}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{im\_titlescreenbg}{im\_titlescreenbg}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classImage}{Image}} M\+Golf\+::im\+\_\+titlescreenbg}
+
+\mbox{\Hypertarget{classMGolf_a0ed8c3e039475f61d2bf9afd0d4a140e}\label{classMGolf_a0ed8c3e039475f61d2bf9afd0d4a140e}} 
+\index{MGolf@{MGolf}!im\_wall@{im\_wall}}
+\index{im\_wall@{im\_wall}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{im\_wall}{im\_wall}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classImage}{Image}} M\+Golf\+::im\+\_\+wall}
+
+\mbox{\Hypertarget{classMGolf_af45c42a510062353cfa580ac3827a527}\label{classMGolf_af45c42a510062353cfa580ac3827a527}} 
+\index{MGolf@{MGolf}!im\_wall\_shadow@{im\_wall\_shadow}}
+\index{im\_wall\_shadow@{im\_wall\_shadow}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{im\_wall\_shadow}{im\_wall\_shadow}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classImage}{Image}} M\+Golf\+::im\+\_\+wall\+\_\+shadow}
+
+\mbox{\Hypertarget{classMGolf_a6a55839952bf30f86c3c3cda8e7784a3}\label{classMGolf_a6a55839952bf30f86c3c3cda8e7784a3}} 
+\index{MGolf@{MGolf}!lastTick@{lastTick}}
+\index{lastTick@{lastTick}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{lastTick}{lastTick}}
+{\footnotesize\ttfamily Uint64 M\+Golf\+::last\+Tick}
+
+\mbox{\Hypertarget{classMGolf_a8cfb0790cd031624f0237431ad602b1a}\label{classMGolf_a8cfb0790cd031624f0237431ad602b1a}} 
+\index{MGolf@{MGolf}!LMouseDown@{LMouseDown}}
+\index{LMouseDown@{LMouseDown}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{LMouseDown}{LMouseDown}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Point M\+Golf\+::\+L\+Mouse\+Down}
+
+\mbox{\Hypertarget{classMGolf_a0902979063b8b29d795758b35d97d312}\label{classMGolf_a0902979063b8b29d795758b35d97d312}} 
+\index{MGolf@{MGolf}!LMouseUP@{LMouseUP}}
+\index{LMouseUP@{LMouseUP}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{LMouseUP}{LMouseUP}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Point M\+Golf\+::\+L\+Mouse\+UP}
+
+\mbox{\Hypertarget{classMGolf_a269f380cfb0e60d9ad09a73c026fb215}\label{classMGolf_a269f380cfb0e60d9ad09a73c026fb215}} 
+\index{MGolf@{MGolf}!mouseMotion@{mouseMotion}}
+\index{mouseMotion@{mouseMotion}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{mouseMotion}{mouseMotion}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Point M\+Golf\+::mouse\+Motion}
+
+\mbox{\Hypertarget{classMGolf_ac8ac9c5680cebe898bf4002a31a9ad43}\label{classMGolf_ac8ac9c5680cebe898bf4002a31a9ad43}} 
+\index{MGolf@{MGolf}!MPressed@{MPressed}}
+\index{MPressed@{MPressed}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{MPressed}{MPressed}}
+{\footnotesize\ttfamily bool M\+Golf\+::\+M\+Pressed}
+
+\mbox{\Hypertarget{classMGolf_a289221c6074a49a14feb8c1946a85091}\label{classMGolf_a289221c6074a49a14feb8c1946a85091}} 
+\index{MGolf@{MGolf}!quit@{quit}}
+\index{quit@{quit}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{quit}{quit}}
+{\footnotesize\ttfamily bool M\+Golf\+::quit}
+
+\mbox{\Hypertarget{classMGolf_a98f975f9163b83a4930ea950ec9f645a}\label{classMGolf_a98f975f9163b83a4930ea950ec9f645a}} 
+\index{MGolf@{MGolf}!rec\_ball@{rec\_ball}}
+\index{rec\_ball@{rec\_ball}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{rec\_ball}{rec\_ball}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Rect M\+Golf\+::rec\+\_\+ball}
+
+\mbox{\Hypertarget{classMGolf_a1c8b5e3500d843db99b8715713d9e761}\label{classMGolf_a1c8b5e3500d843db99b8715713d9e761}} 
+\index{MGolf@{MGolf}!rec\_plus@{rec\_plus}}
+\index{rec\_plus@{rec\_plus}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{rec\_plus}{rec\_plus}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Rect M\+Golf\+::rec\+\_\+plus}
+
+\mbox{\Hypertarget{classMGolf_a1b9021aaadbaaaa8554947bf77f29d6d}\label{classMGolf_a1b9021aaadbaaaa8554947bf77f29d6d}} 
+\index{MGolf@{MGolf}!renderer@{renderer}}
+\index{renderer@{renderer}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{renderer}{renderer}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Renderer$\ast$ M\+Golf\+::renderer}
+
+\mbox{\Hypertarget{classMGolf_a6e01f7f7d5f02cc56e70225138fb909e}\label{classMGolf_a6e01f7f7d5f02cc56e70225138fb909e}} 
+\index{MGolf@{MGolf}!ScreenX@{ScreenX}}
+\index{ScreenX@{ScreenX}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{ScreenX}{ScreenX}}
+{\footnotesize\ttfamily int M\+Golf\+::\+ScreenX}
+
+\mbox{\Hypertarget{classMGolf_aa4f03b832b5b1e53618525ca2059b087}\label{classMGolf_aa4f03b832b5b1e53618525ca2059b087}} 
+\index{MGolf@{MGolf}!ScreenY@{ScreenY}}
+\index{ScreenY@{ScreenY}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{ScreenY}{ScreenY}}
+{\footnotesize\ttfamily int M\+Golf\+::\+ScreenY}
+
+\mbox{\Hypertarget{classMGolf_a89575ac3c23ba9fdaa0bdd403587e2c8}\label{classMGolf_a89575ac3c23ba9fdaa0bdd403587e2c8}} 
+\index{MGolf@{MGolf}!state@{state}}
+\index{state@{state}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily int M\+Golf\+::state}
+
+\mbox{\Hypertarget{classMGolf_a7b1f81bb3898f52e239ba833fffcb607}\label{classMGolf_a7b1f81bb3898f52e239ba833fffcb607}} 
+\index{MGolf@{MGolf}!strength@{strength}}
+\index{strength@{strength}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{strength}{strength}}
+{\footnotesize\ttfamily float M\+Golf\+::strength}
+
+\mbox{\Hypertarget{classMGolf_adb7d5cda27559d7f2ee0423910b16a79}\label{classMGolf_adb7d5cda27559d7f2ee0423910b16a79}} 
+\index{MGolf@{MGolf}!window@{window}}
+\index{window@{window}!MGolf@{MGolf}}
+\doxysubsubsection{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Window$\ast$ M\+Golf\+::window}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/d/\+Lucas/\+Bureau/\+L\+I\+F\+A\+P4/\+Git remote/master-\/golf/master\+\_\+golf/src/sdl2/\mbox{\hyperlink{MasterGolf_8h}{Master\+Golf.\+h}}\item 
+/mnt/d/\+Lucas/\+Bureau/\+L\+I\+F\+A\+P4/\+Git remote/master-\/golf/master\+\_\+golf/src/sdl2/\mbox{\hyperlink{MasterGolf_8cpp}{Master\+Golf.\+cpp}}\end{DoxyCompactItemize}
